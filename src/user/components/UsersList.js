@@ -7,6 +7,7 @@ const UsersList = (props) => {
     return (
       <div className="center">
         <h2>No users found.</h2>
+        <p></p>
       </div>
     );
   }
