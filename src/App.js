@@ -8,19 +8,23 @@ import {
 
 import Users from "./user/pages/Users";
 import NewPlace from "./places/pages/NewPlace";
+import MainNavigaton from "./shared/components/Navigation/MainNavigation";
 
 const App = () => {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact>
-          <Users />
-        </Route>
-        <Route path="/places/new" exact>
-          <NewPlace />
-        </Route>
-        <Redirect to="/" />
-      </Switch>
+      <MainNavigaton />
+      <main>
+        <Switch>
+          <Route path="/" exact>
+            <Users />
+          </Route>
+          <Route path="/places/new" exact>
+            <NewPlace />
+          </Route>
+          <Redirect to="/" />
+        </Switch>
+      </main>
     </Router>
   );
 };
