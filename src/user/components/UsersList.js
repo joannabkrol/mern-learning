@@ -7,7 +7,7 @@ const UsersList = (props) => {
   if (props.items.length === 0) {
     return (
       <div className="center">
-        <Card>
+        <Card style={{ padding: "1rem" }}>
           <h2>No users found.</h2>
         </Card>
       </div>
