@@ -1,4 +1,4 @@
-This is project for learining MERN:
+This is project for learning MERN:
 
 - MongoDB
 - Express
